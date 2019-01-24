@@ -120,7 +120,8 @@
         <!--Grid column-->
         <div class="col-md-12 text-center">
           <h5 class="h5-responsive mb-4">Witaj na moim portfolio! Jako wolny strzelec, nie muszący opłacać biura czy pracowników, oferuję bardzo konkurencyjne ceny. Zapraszam do obejrzenia moich projektów oraz zapoznania się z ofertą.</h5>
-          <h5 class="h5-responsive">Swoje projekty koduję w zastosowaniu o najnowsze technologie, takie jak HTML5, CSS3 czy JavaScript. Dzięki temu strony, które tworzę są zgodne z najnowszymi wytycznymi światowych organizacji oraz są przyjazne dla wyszukiwarek i oka.</h5>
+          <h5 class="h5-responsive">Swoje projekty koduję w zastosowaniu o najnowsze technologie, takie jak HTML5, CSS3 czy JavaScript. Dzięki temu strony, które tworzę są zgodne z najnowszymi wytycznymi światowych organizacji oraz są przyjazne dla
+            wyszukiwarek i oka.</h5>
         </div>
         <!--Grid column-->
       </div>
@@ -337,7 +338,7 @@
                 </div>
 
                 <!-- Price -->
-                <h2 class="font-weight-bold my-4">400-700 zł</h2>
+                <h2 class="font-weight-bold my-4">400-800 zł</h2>
                 <p class="grey-text">Tego typu wykonanie charakteryzuje się tym, iż wszystkie treści znajdują się na jednej stronie, a menu przewija do danej sekcji.</p>
                 <!-- <a class="btn btn-light-blue btn-rounded waves-effect waves-light">Kup teraz</a> -->
 
@@ -368,7 +369,7 @@
                 </div>
 
                 <!--Price -->
-                <h2 class="font-weight-bold my-4">900-1200 zł</h2>
+                <h2 class="font-weight-bold my-4">900-1400 zł</h2>
                 <p>Najlepsza opcja czyli wiele podstron z bogatą treścią na których możemy obsłużyć bloga, galerię oraz formularze.</p>
                 <!-- <a class="btn btn-outline-white btn-rounded waves-effect waves-light">Kup teraz</a> -->
 
@@ -430,69 +431,70 @@
 
           <!--Grid column-->
           <div class="col-md-8">
-            <form>
+            <form id="contact-form" method="post" action="contact.php" role="form">
 
-              <!--Grid row-->
-              <div class="row">
+              <div class="messages"></div>
 
-                <!--Grid column-->
-                <div class="col-md-6">
-                  <div class="md-form">
-                    <input type="text" id="contact-name" class="form-control">
-                    <label for="contact-name" class="">Twoje imię</label>
+              <div class="controls">
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="md-form">
+                      <label for="form_name">Imię</label>
+                      <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Imię jest wymagane!.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="md-form">
+                      <label for="form_lastname">Nazwisko</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Nazwisko jest wymagane!">
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
                 </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6">
-                  <div class="md-form">
-                    <input type="text" id="contact-email" class="form-control">
-                    <label for="contact-email" class="">Twój email</label>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="md-form">
+                      <label for="form_email">Email</label>
+                      <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Podaj prawidłowy adres email">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="md-form">
+                      <select id="form_need" name="need" class="mdb-select md-form" required="required" data-error="Prosimy wybrać temat">
+                        <option value="" disabled selected>Wybierz temat</option>
+                        <option value="Projekt i wycena strony">Projekt i wycena strony</option>
+                        <option value="Kodowanie szablonu">Kodowanie szablonu</option>
+                        <option value="Konfiguracja hostingu i strony">Konfiguracja hostingu i strony</option>
+                        <option value="Inny">Inny</option>
+                      </select>
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
                 </div>
-                <!--Grid column-->
-
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <label for="form_message">Wiadomość</label>
+                      <textarea id="form_message" name="message" class="md-textarea form-control" rows="4" required="required" data-error="Pole wiadomości nie może być puste!"></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-center text-md-center">
+                    <input disabled type="submit" class="btn purple-gradient btn-rounded btn-send waves-effect waves-light white-text" style="padding: .84rem 2.15rem;" value="Wyślij">
+                    <p class="red-text my-4">Formularz nie jest jeszcze aktywny, przepraszam za utrudnienia. Możesz do mnie napisać bezpośrednio na adres email podany poniżej.</p>
+                  </div>
+                </div>
               </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="md-form">
-                    <input type="text" id="contact-Subject" class="form-control">
-                    <label for="contact-Subject" class="">Temat</label>
-                  </div>
-                </div>
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row justify-content-md-center">
-
-                <!--Grid column-->
-                <div class="col-md-12">
-
-                  <div class="md-form">
-                    <textarea type="text" id="contact-message" class="md-textarea form-control" rows="3"></textarea>
-                    <label for="contact-message">Wiadomość</label>
-                  </div>
-
-                </div>
-              </div>
-              <!--Grid row-->
 
             </form>
+            <!--Grid column-->
 
-            <div class="text-center text-md-center my-4">
-              <a class="btn purple-gradient btn-rounded waves-effect waves-light white-text" style="padding: .84rem 2.15rem;">Wyślij</a>
-            </div>
+
+
           </div>
-          <!--Grid column-->
-
-
-
-        </div>
 
       </section>
 
@@ -536,8 +538,21 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Contact Form JavaScript -->
+  <script type="text/javascript" src="js/contact.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
   <script>
     new WOW().init();
+
+    // Tooltips Initialization
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // Material Select Initialization
+    $(document).ready(function() {
+      $('.mdb-select').materialSelect();
+    });
   </script>
 </body>
 
