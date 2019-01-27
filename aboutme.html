@@ -152,15 +152,15 @@
                           <div class="col-md-12 text-center">
 
                             <!--Facebook-->
-                            <a href="https://www.facebook.com/lukasz.kurpiewski16" target="_blank" type="button" class="btn-floating btn-fb btn-sm waves-effect waves-light">
+                            <a href="https://www.facebook.com/lukasz.kurpiewski16" target="_blank" type="button" class="btn-fb-social btn-floating btn-fb btn-sm waves-effect waves-light">
                               <i class="fab fa-facebook-f"></i>
                             </a>
                             <!--Instagram-->
-                            <a href="https://www.instagram.com/kurpiu_/" target="_blank" type="button" class="btn-floating btn-dribbble btn-sm waves-effect waves-light">
+                            <a href="https://www.instagram.com/kurpiu_/" target="_blank" type="button" class="btn-ig-social btn-floating btn-dribbble btn-sm waves-effect waves-light">
                               <i class="fab fa-instagram"></i>
                             </a>
                             <!--Linkedin-->
-                            <a href="https://www.linkedin.com/in/lukasz-kurpiewski" target="_blank" type="button" class="btn-floating btn-li btn-sm waves-effect waves-light">
+                            <a href="https://www.linkedin.com/in/lukasz-kurpiewski" target="_blank" type="button" class="btn-ln-social btn-floating btn-li btn-sm waves-effect waves-light">
                               <i class="fab fa-linkedin"></i>
                             </a>
 
@@ -381,6 +381,7 @@
     new WOW().init();
 
     // MDB function inits
+    $('.btn-fb-social, .btn-ig-social, .btn-ln-social').hover(function(){ $(this).toggleClass('animated wobble') });
   </script>
 </body>
 
