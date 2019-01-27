@@ -38,6 +38,7 @@ a.btn:hover {
 
   .wave-footer {
     top: -250px !important;
+    background-size: 80% 60px !important;
   }
 }
 
@@ -97,6 +98,7 @@ a.btn:hover {
   left: 0px;
   height: 100%;
   width: 100%;
+  background-size: 70% 60px;
   background-position: 0 bottom;
   background-repeat: repeat-x;
   transform-origin: center bottom;
