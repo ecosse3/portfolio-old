@@ -1,3 +1,105 @@
+@media (max-width: 768px) {
+  .lk-name {
+    font-size: 3.5rem !important;
+  }
+
+  .wave-footer {
+    top: -250px !important;
+    background-size: 80% 60px !important;
+  }
+
+  .md-v-line {
+    display: none;
+  }
+
+  li>i.pr-3 {
+    padding-right: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .pt-md-6,
+  .py-md-6 {
+    padding-top: 5rem !important;
+  }
+
+  .pr-md-6,
+  .px-md-6 {
+    padding-right: 5rem !important;
+  }
+
+  .pb-md-6,
+  .py-md-6 {
+    padding-bottom: 5rem !important;
+  }
+
+  .pl-md-6,
+  .px-md-6 {
+    padding-left: 5rem !important;
+  }
+
+  .mt-md-6,
+  .my-md-6 {
+    padding-top: 5rem !important;
+  }
+
+  .mr-md-6,
+  .mx-md-6 {
+    padding-right: 5rem !important;
+  }
+
+  .mb-md-6,
+  .my-md-6 {
+    padding-bottom: 5rem !important;
+  }
+
+  .ml-md-6,
+  .mx-md-6 {
+    padding-left: 5rem !important;
+  }
+}
+
+.pt-6,
+.py-6 {
+  padding-top: 5rem !important;
+}
+
+.pr-6,
+.px-6 {
+  padding-right: 5rem !important;
+}
+
+.pb-6,
+.py-6 {
+  padding-bottom: 5rem !important;
+}
+
+.pl-6,
+.px-6 {
+  padding-left: 5rem !important;
+}
+
+.mt-6,
+.my-6 {
+  padding-top: 5rem !important;
+}
+
+.mr-6,
+.mx-6 {
+  padding-right: 5rem !important;
+}
+
+.mb-6,
+.my-6 {
+  padding-bottom: 5rem !important;
+}
+
+.ml-6,
+.mx-6 {
+  padding-left: 5rem !important;
+}
+
 .lysy-gradient {
   background: -webkit-linear-gradient(50deg, #56c4c4, #F0E68C) !important;
   background: -o-linear-gradient(50deg, #56c4c4, #F0E68C) !important;
@@ -31,60 +133,6 @@ a.btn:hover {
   color: white;
 }
 
-@media (max-width: 768px) {
-  .lk-name {
-    font-size: 3.5rem !important;
-  }
-
-  .wave-footer {
-    top: -250px !important;
-    background-size: 80% 60px !important;
-  }
-}
-
-.pt-6,
-.py-6 {
-  padding-top: 5rem !important;
-}
-
-.pr-6,
-.px-6 {
-  padding-right: 5rem !important;
-}
-
-.pb-6,
-.py-6 {
-  padding-bottom: 5rem !important;
-}
-
-.pl-6,
-.px-6 {
-  padding-left: 5rem !important;
-}
-
-@media (min-width: 768px) {
-
-  .pt-md-6,
-  .py-md-6 {
-    padding-top: 5rem !important;
-  }
-
-  .pr-md-6,
-  .px-md-6 {
-    padding-right: 5rem !important;
-  }
-
-  .pb-md-6,
-  .py-md-6 {
-    padding-bottom: 5rem !important;
-  }
-
-  .pl-md-6,
-  .px-md-6 {
-    padding-left: 5rem !important;
-  }
-}
-
 .wave-footer {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -102,4 +150,20 @@ a.btn:hover {
   background-position: 0 bottom;
   background-repeat: repeat-x;
   transform-origin: center bottom;
+}
+
+.md-v-line {
+  position: absolute;
+  border-left: 1px solid rgba(0, 0, 0, .125);
+  height: 50px;
+  top: 0px;
+  left: 54px;
+}
+
+.ecollow-text {
+  color: #D1DF97 !important;
+}
+
+.ecoblue-text {
+  color: #6CC9BC !important;
 }
