@@ -407,9 +407,7 @@
 
           <!--Grid column-->
           <div class="col-md-8">
-            <form id="contact-form" method="post" action="contact.php" role="form">
-
-              <div class="messages"></div>
+            <form name="sentMessage" id="contactForm" novalidate="novalidate">
 
               <div class="controls">
 
@@ -417,15 +415,15 @@
                   <div class="col-md-6">
                     <div class="md-form">
                       <label for="form_name">Imię</label>
-                      <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Imię jest wymagane!.">
-                      <div class="help-block with-errors"></div>
+                      <input id="form_name" type="text" name="name" class="form-control" required="required" data-validation-required-message="Imię jest wymagane!">
+                      <div class="help-block text-danger"></div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="md-form">
                       <label for="form_lastname">Nazwisko</label>
-                      <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Nazwisko jest wymagane!">
-                      <div class="help-block with-errors"></div>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-validation-required-message="Nazwisko jest wymagane!">
+                      <div class="help-block text-danger"></div>
                     </div>
                   </div>
                 </div>
@@ -433,33 +431,34 @@
                   <div class="col-md-6">
                     <div class="md-form">
                       <label for="form_email">Email</label>
-                      <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Podaj prawidłowy adres email">
-                      <div class="help-block with-errors"></div>
+                      <input id="form_email" type="email" name="email" class="form-control" required="required" data-validation-required-message="Podaj prawidłowy adres email">
+                      <div class="help-block text-danger"></div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="md-form">
-                      <select id="form_need" name="need" class="mdb-select md-form" required="required" data-error="Prosimy wybrać temat">
+                      <select id="form_need" name="need" class="mdb-select md-form" required="required" data-validation-required-message="Prosimy wybrać temat">
                         <option value="" disabled selected>Wybierz temat</option>
                         <option value="Projekt i wycena strony">Projekt i wycena strony</option>
                         <option value="Kodowanie szablonu">Kodowanie szablonu</option>
                         <option value="Konfiguracja hostingu i strony">Konfiguracja hostingu i strony</option>
                         <option value="Inny">Inny</option>
                       </select>
-                      <div class="help-block with-errors"></div>
+                      <div class="help-block text-danger"></div>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12">
                     <div class="md-form">
-                      <label for="form_message">Wiadomość</label>
-                      <textarea id="form_message" name="message" class="md-textarea form-control" rows="4" required="required" data-error="Pole wiadomości nie może być puste!"></textarea>
-                      <div class="help-block with-errors"></div>
+                      <label for="message">Wiadomość</label>
+                      <textarea id="message" name="message" class="md-textarea form-control" rows="4" required="required" data-error="Pole wiadomości nie może być puste!"></textarea>
+                      <div class="help-block text-danger"></div>
                     </div>
                   </div>
                   <div class="col-md-12 text-center text-md-center">
-                    <input disabled type="submit" class="btn purple-gradient btn-rounded btn-send waves-effect waves-light white-text" style="padding: .84rem 2.15rem;" value="Wyślij">
+                    <input type="submit" id="sendMessageButton" class="btn purple-gradient btn-rounded btn-send waves-effect waves-light white-text" style="padding: .84rem 2.15rem;" value="Wyślij">
+                    <div class="success"></div>
                     <p class="red-text my-4">Formularz nie jest jeszcze aktywny, przepraszam za utrudnienia. Możesz do mnie napisać bezpośrednio na adres email podany poniżej.</p>
                   </div>
                 </div>
@@ -507,8 +506,15 @@
   <!--Main Layout-->
 
   <!--  SCRIPTS  -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
@@ -516,7 +522,6 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Contact Form JavaScript -->
-  <script type="text/javascript" src="js/contact.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
   <script>
     new WOW().init();
