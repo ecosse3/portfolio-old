@@ -17026,8 +17026,8 @@ section.team-section .avatar img {
       content: "\203a"; }
 
 .testimonial-carousel .testimonial {
-  margin-right: 15%;
-  margin-left: 15%; }
+  margin-right: 25%;
+  margin-left: 25%; }
   .testimonial-carousel .testimonial .avatar img {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
